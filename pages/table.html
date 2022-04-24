@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px" width="100%">
+        <thead>
+            <th>Roll NO:</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Anna</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Arun</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Anu</td>
+            </tr>
+        </tbody>
+    </table>
+    <form method="post" action="home.html">
+        <fieldset>
+            <legend>RegistrationForm</legend>
+            <input type="text" value="H191919" readonly>
+            <div>
+                <label for="">FirstName</label>
+            </div>
+            <div>
+                <input type="text"  minlength="3" maxlength="6" name="fname">
+            </div>
+            <div>
+                <label for="">LastName</label>
+            </div>
+            <div>
+                <input type="text" name="lname" placeholder="Enter your lastname">
+            </div>
+            <div>
+                <label for="">email</label>
+            </div>
+            <div>
+                <input type="email" required name="email">
+            </div>
+            <div>
+                <label for="">Age</label>
+            </div>
+            <div>
+                <input type="number" min="18" max="25" name="age">
+            </div>
+            <div>
+                <label for="">Dob</label>
+            </div>
+            <div>
+                <input type="date" min="2012-01-01" max="2020-01-01">
+            </div>
+            <div>
+                <label for="">Gender</label>
+            </div>
+            <div>
+                Male<input type="radio" name="gender" value="m">
+                Female<input type="radio" name="gender" value="f">
+            </div>
+            <div>
+                <label for="">State</label>
+            </div>
+            <div>
+                <select name="state" id="">
+                    <option value="">Kerala</option>
+                    <option value="">Karnataka</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="G">Goa</option>
+                </select>
+            </div>
+            <br>
+            <input name="course" type="text" list="course">
+            <datalist id="course">
+                <option>Ms</option>
+                <option>Fs</option>
+                <option>DS</option>
+                <option>DA</option>
+            </datalist>
+            <div>
+                <label for="">Countries</label>
+            </div>
+            <div>
+                India<input type="checkbox" name="countries" value="IN">
+                Nepal<input type="checkbox" name="countries" value="NP">
+                Sri Lanka<input type="checkbox" name="countries" value="SL">
+            </div>
+            
+            <div>
+                <label for="">Password</label>
+            </div>
+            <div>
+                <input type="password" name="password">
+            </div>
+
+            <div>
+                <label for="">URL</label>
+            </div>
+            <div>
+                <input type="url" name="url">
+            </div>
+
+            <div>
+                <label for="">File</label>
+            </div>
+            <div>
+                <input type="file" name="file">
+            </div>
+
+            <div>
+                <label for="">Range</label>
+            </div>
+            <div>
+                <input type="range" name="range">
+            </div>
+
+            <div><br>
+                <input type="submit" name="Signup">
+            </div>
+
+        </fieldset>
+    </form>
+
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
