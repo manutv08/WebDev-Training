@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">prod ID</label>
+    </div>
+    <div>
+        <input type="text" id="prodId">
+    </div>
+    <div>
+        <label for="">prod Category</label>
+    </div>
+    <div>
+        <select id="prodCategory">
+            <option value="electronics">red</option>
+            <option value="grocery">blue</option>
+            <option value="health">green</option>
+        </select>
+    </div>
+    <div>
+        <button onclick="getData()">Add</button>
+    </div>
+
+    <script>
+        let obj = {};
+        console.log(obj);
+        console.log(typeof obj);
+        obj.x = 10
+        obj.y = 20
+        console.log(obj);
+        console.log(obj.x);
+        obj.showData = function () {
+            console.log(this.x);
+            console.log(this.y);
+        }
+        console.log(obj);
+        obj.showData()
+
+        let person = { name: "Raj", age: 12, address: "NYC", }
+        person.display = function () {
+            console.log(`Name ${this.name} Age ${this.age} address ${this.address}`);
+        }
+        console.log(person);
+        person.display()
+
+
+        let student = {
+            rollno: 1, name: "Anna", marks: [90, 67, 45], findAvg:
+                function () { console.log(`Average marks ${(this.marks[0] + this.marks[1] + this.marks[2]) / 3.0}`); }
+        }
+        student.findAvg()
+
+
+        let employee = { id: 10, name: "Raj", salary: 1000, incSalary: function (amount) { this.salary += amount } }
+        console.log(employee);
+        employee.incSalary(500)
+        console.log(employee);
+
+        function getData() {
+            let proId = document.getElementById("prodId").value
+            let proCat = document.getElementById("prodCategory").value
+
+
+        }
+
+        let a = new Array()
+        console.log(a);
+        let date = new Date()
+        let ref=date
+        do{
+            ref=Object.getPrototypeOf(date)
+            console.log(ref);
+
+        }while(ref==null)
+
+        console.log(Object.getPrototypeOf(date));
+
+        let o1={x1:10,y1:20}
+        let o2={x2:10,y2:20}
+        let o3={x3:10,y3:20}
+        let o4={x4:10,y4:20}
+        o1.__proto__=o2;
+        console.log(o1);
+        // o1.__proto__=o3
+        // console.log(o1);
+        console.log("proto",Object.getPrototypeOf(o1));
+        o1.Object.getPrototypeOf(o1).__proto__=o3;
+        console.log(Object.getPrototypeOf(o1));
+
+    </script>
+</body>
+
+</html>
