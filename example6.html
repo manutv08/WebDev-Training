@@ -30,46 +30,46 @@
     </div>
 
     <script>
-        let obj = {};
-        console.log(obj);
-        console.log(typeof obj);
-        obj.x = 10
-        obj.y = 20
-        console.log(obj);
-        console.log(obj.x);
-        obj.showData = function () {
-            console.log(this.x);
-            console.log(this.y);
-        }
-        console.log(obj);
-        obj.showData()
+        // let obj = {};
+        // console.log(obj);
+        // console.log(typeof obj);
+        // obj.x = 10
+        // obj.y = 20
+        // console.log(obj);
+        // console.log(obj.x);
+        // obj.showData = function () {
+        //     console.log(this.x);
+        //     console.log(this.y);
+        // }
+        // console.log(obj);
+        // obj.showData()
 
-        let person = { name: "Raj", age: 12, address: "NYC", }
-        person.display = function () {
-            console.log(`Name ${this.name} Age ${this.age} address ${this.address}`);
-        }
-        console.log(person);
-        person.display()
-
-
-        let student = {
-            rollno: 1, name: "Anna", marks: [90, 67, 45], findAvg:
-                function () { console.log(`Average marks ${(this.marks[0] + this.marks[1] + this.marks[2]) / 3.0}`); }
-        }
-        student.findAvg()
+        // let person = { name: "Raj", age: 12, address: "NYC", }
+        // person.display = function () {
+        //     console.log(`Name ${this.name} Age ${this.age} address ${this.address}`);
+        // }
+        // console.log(person);
+        // person.display()
 
 
-        let employee = { id: 10, name: "Raj", salary: 1000, incSalary: function (amount) { this.salary += amount } }
-        console.log(employee);
-        employee.incSalary(500)
-        console.log(employee);
-
-        function getData() {
-            let proId = document.getElementById("prodId").value
-            let proCat = document.getElementById("prodCategory").value
+        // let student = {
+        //     rollno: 1, name: "Anna", marks: [90, 67, 45], findAvg:
+        //         function () { console.log(`Average marks ${(this.marks[0] + this.marks[1] + this.marks[2]) / 3.0}`); }
+        // }
+        // student.findAvg()
 
 
-        }
+        // let employee = { id: 10, name: "Raj", salary: 1000, incSalary: function (amount) { this.salary += amount } }
+        // console.log(employee);
+        // employee.incSalary(500)
+        // console.log(employee);
+
+        // function getData() {
+        //     let proId = document.getElementById("prodId").value
+        //     let proCat = document.getElementById("prodCategory").value
+
+
+        // }
 
         // let a = new Array()
         // console.log(a);
@@ -94,6 +94,43 @@
         // console.log("proto",Object.getPrototypeOf(o1));
         // o1.Object.getPrototypeOf(o1).__proto__=o3;
         // console.log(Object.getPrototypeOf(o1));
+
+        // let person = {name:"Raj", age:12}
+        // let student = Object.create(person)
+        // console.log(student);
+        // console.log(student.name);
+        // console.log(student["age"]);
+        // // student.name="Raj Kumar";
+        // student.__proto__.name="Raj Kumar";
+        // console.log(student);
+
+        let personProtoType = {
+            greet:function(){
+                console.log(`hello ${this.Name}!!!!`);
+            }
+        }
+
+
+        function Person(name,age,address){
+            this.Name=name;
+            this.Age=age;
+            this.Address=address
+        }
+
+        Person.prototype=personProtoType;
+        Person.prototype.constructor=Person
+
+        let obj = new Person("Anna",12, "NYC")
+        console.log(obj);
+        console.log(personProtoType);
+        obj.greet()
+        let obj1=new Person("Remo",12, "kerala")
+        obj1.greet()
+        console.log(personProtoType.isPrototypeOf(obj));
+        console.log(obj.hasOwnProperty("Name"));
+        console.log(Object.getPrototypeOf(obj));
+        
+        
 
     </script>
 </body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={x:42}
+        // Object.freeze(obj)
+        // obj.x=50
+        // obj.y=90
+        // console.log(obj);
+        // console.log(Object.isFrozen(obj));
+        Object.seal(obj)
+        obj.x=50
+        obj.y=90
+        console.log(obj);
+
+        let obj2 = Object.assign({x1:10,y1:10},{x2:90,y2:80},{x2:120,y3:140})
+        console.log(obj2);
+        let obj1={p1:1,p2:10}
+        let obj3=Object.assign(obj1)
+        console.log(obj3);
+
+        let p1={x1:10,y1:20}
+        let p2={x1:10,y1:20}
+        console.log(p1==p2);
+        let s1=new String("hello")
+        let s2=new String("hello")
+        console.log(s1==s2);
+        console.log(Object.keys(obj2));
+        for(let [k,v] of Object.entries(obj2)){
+            console.log(k);
+            console.log(v);
+        }
+
+//Array Destruction
+        let [a,b,c,d]=[10,20,30,40]
+        console.log(a);
+        console.log(b);
+
+        function Employee(id,name,salary){
+            this.id=id
+            this.name=name
+            this.salary=salary
+            this.incSalary=function(amount){
+                this.salary+=amount
+                console.log("Current Salry",this.salary);
+            }
+        }
+        let e1=new Employee("101","Ann",10000)
+        e1.incSalary(2000)
+        let e2=new Employee("103","Anju",20000)
+        let e3=new Employee("104","Arun",14000)
+        let e4=new Employee("102","Alan",12000)
+        e4.incSalary(2500)
+
+        let employeelist=[e1,e2,e3,e4]
+        console.log(employeelist);
+        console.log(employeelist[0]);
+        document.write(employeelist)
+        for(let emp of employeelist){
+            console.log(emp.id);
+            console.log(emp.name);
+            console.log(emp.salary);
+        }
+    </script>
+</body>
+</html>
