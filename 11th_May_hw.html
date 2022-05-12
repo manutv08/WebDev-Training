@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let reg2=/^\+91\s\d{10}$/g
+        let reg=/(\d+)|(\(\d{4}\)[ ]\d{7}| (\[\d{4}\][-]\d{6}))/g
+        // let regex=/^(987|628)\d{7}$/g
+        // input="+91 1234567890"
+        let input= "This is my personal phone number 9876543210 and my office number is (0485) 2245670 and fax no is [0484]-224567"
+        // let input="9871234567 6281234567"
+        alert(input.match(reg));
+    </script>
+    
+</body>
+</html>
