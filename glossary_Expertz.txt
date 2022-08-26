@@ -1,0 +1,204 @@
+20th apr
+/mnt/c/Users/Manu/Desktop/MyProject/web/index.html
+    <!Doctype html>
+    <html>
+    <body>
+    <head>
+    <title>
+    <p>
+    <h1>
+    <!-- -->
+/mnt/c/Users/Manu/Desktop/MyProject/pages/home.html
+    <a>
+    attribute
+    inline v/s block style
+    <div>
+    <ul>
+    <ol>
+    <img>
+    <audio>
+    <video>
+
+../ and web/
+
+21st apr
+/mnt/c/Users/Manu/Desktop/MyProject/pages/table.html
+    <table>
+    <thead>
+    <th>
+    <tbody>
+    <tr>
+    <td>
+
+    <form method="post" action="home.html">
+    <fieldset>
+    <legend>
+    <label>
+    <input>
+    inspect network tab [around 53:00]
+    dropdown---><select> <option>
+            ---><datalist> <option> (used nowadays)
+    <iframe>        
+
+22nd apr
+/mnt/c/Users/Manu/Desktop/MyProject/example.html
+    css
+    <style>
+    <link rel="stylesheet" href="css/styles.css">
+/mnt/c/Users/Manu/Desktop/MyProject/demo.html
+    margin styles
+/mnt/c/Users/Manu/Desktop/MyProject/homework1.html (H.W)
+    th:hover
+
+25th apr
+/mnt/c/Users/Manu/Desktop/MyProject/demo.html
+    padding styles
+    inspect--->Elements
+    position
+    CSS flow/grid/flexible layout
+    opacity
+/mnt/c/Users/Manu/Desktop/MyProject/webpage.html (H.W)
+    
+    Bootstrap(download & extract only)
+    /mnt/c/Users/Manu/Desktop/MyProject/bootstrap-5.1.3-dist
+    Typography
+
+26th apr    
+/mnt/c/Users/Manu/Desktop/MyProject/example2.html
+    btn-danger
+    border-primary
+    /mnt/c/Users/Manu/Desktop/MyProject/example3.html
+    grid system
+    /mnt/c/Users/Manu/Desktop/MyProject/example4.html
+    form-label
+    form-control
+    /mnt/c/Users/Manu/Desktop/MyProject/formGridAssignment.html
+    navbar
+
+27th apr
+/mnt/c/Users/Manu/Desktop/MyProject/example5.html
+    alert-danger
+    modal
+    badge
+    card
+        /mnt/c/Users/Manu/Desktop/MyProject/cardsHomework.html (H.W)
+    border-radius
+
+/mnt/c/Users/Manu/Desktop/MyProject/bootstrap-icons-1.8.1
+    /mnt/c/Users/Manu/Desktop/MyProject/bootstrap_icon.html
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+
+28th apr
+/mnt/c/Users/Manu/Desktop/MyProject/demo3.html
+    media query [14:38---> inspect--->styles]
+    DOM manipulation [1:34:00]
+/mnt/c/Users/Manu/Desktop/MyProject/demo5.html
+    JS
+        let vs var vs const
+        primitives and objects
+
+29th apr
+/mnt/c/Users/Manu/Desktop/MyProject/demo5.html
+    JS cont...
+
+2nd may
+/mnt/c/Users/Manu/Desktop/MyProject/demo6.html
+    event-driven programming
+    /mnt/c/Users/Manu/Desktop/MyProject/js/scripts.js
+        declaration hoisting [19:37]
+        scope(block or global)
+        namespace pollution [33:00]
+        stack memory(func calls, temp vars, local vars..) and heap memory(objects)
+    /mnt/c/Users/Manu/Desktop/MyProject/js/script1.js
+        event handling
+        onclick
+        onmouseover
+
+4th may
+/mnt/c/Users/Manu/Desktop/MyProject/demo7.html
+/mnt/c/Users/Manu/Desktop/MyProject/js/script2.js
+    onchange
+    innerText
+    innerHTML
+    strings
+    string constant pool
+
+5th may
+    function constructor
+    object prototype
+    Date
+    arrays
+    arrow function
+    /mnt/c/Users/Manu/Desktop/MyProject/5th_May_hw.html
+
+6th may
+    functional programming
+    'use strict'
+    pass/return func as argument
+    function closure[48:00]
+    self-invoking func[55:00]
+    array functions[1:00:00]
+    /mnt/c/Users/Manu/Desktop/MyProject/6th_May_hw.html (H.W)
+
+9th may
+/mnt/c/Users/Manu/Desktop/MyProject/example6.html
+    Object creation
+/mnt/c/Users/Manu/Desktop/MyProject/9th_May_hw.html
+    differential Inheritence{prototype} [1:25:30]
+    Object (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+        getPrototypeOf()
+
+10th may
+/mnt/c/Users/Manu/Desktop/MyProject/example7.html
+    Built-in Object functions
+    constructor [17:00]
+    function constructor
+    Object.freeze(obj)
+    Object.seal(obj)
+    Object.assign(obj)
+    Object.keys(obj)
+    Array destruction
+/mnt/c/Users/Manu/Desktop/MyProject/10th_May_hw.html
+
+11th may
+/mnt/c/Users/Manu/Desktop/MyProject/example7.html
+    regex
+
+12th may
+/mnt/c/Users/Manu/Desktop/MyProject/example7.html
+    regex (cont...)
+    
+    asynchronous programming[24:10]
+        callbacks
+        /mnt/c/Users/Manu/Desktop/MyProject/js/callbacks.js
+        promises
+        /mnt/c/Users/Manu/Desktop/MyProject/js/promises.js
+        fetch function 
+            typicode json server
+    
+13th may
+     promise.all, 
+    /mnt/c/Users/Manu/Desktop/MyProject/js/asyncawait.js [56:00]
+    async await
+    try-catch[1:08:00]
+    /mnt/c/Users/Manu/Desktop/MyProject/js/demo.js
+    [call, apply, & bind] [1:17:00]('partial function application or function currying')
+    google slide 97
+
+16th may (morning)
+    apply (cont...)
+   16th may homework(not done)(dice problem) 
+   /mnt/c/Users/Manu/Desktop/MyProject/form.html
+   /mnt/c/Users/Manu/Desktop/MyProject/js/validation.js
+   form validation using JS
+   spread operators [1:00:18]
+   unicode character
+
+16th may (afternoon)
+
+
+
+
+
+
+

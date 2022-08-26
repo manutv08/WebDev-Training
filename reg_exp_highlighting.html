@@ -8,25 +8,25 @@
     <script src="js/callbacks.js"></script>
 </head>
 <body>
-   <!-- <textarea name="" id="content" cols="30" rows="10"></textarea> 
+   <textarea name="" id="content" cols="30" rows="10"></textarea> 
    <input type="text" id="word">
    <button onclick="getValue()" id="btn">search</button>
-   <p id="para"></p> -->
-   <button id="btn">Click</button>
+   <p id="para"></p>
+   <!-- <button id="btn">Click</button> -->
    
 
    <script>
-    //    function getValue(){
-    //        let sentence = document.getElementById("content").value
-    //        let word = document.getElementById("word").value
-    //        let regex = new RegExp(word, "g", "i")
-    //        let txt = sentence.replace(regex, `<span style='background-color:yellow'>${word}</span>`)
-    //        document.getElementById("para").innerHTML=txt
-    //    }
-    let obj = "hello"
-    // document.querySelector("btn").addEventListener("click",()=>{
-        // alert("Called")
-    // })
+       function getValue(){
+           let sentence = document.getElementById("content").value
+           let word = document.getElementById("word").value
+           let regex = new RegExp(word, "g", "i")
+           let txt = sentence.replace(regex, `<span style='background-color:yellow'>${word}</span>`)
+           document.getElementById("para").innerHTML=txt
+       }
+    // let obj = "hello"
+    document.querySelector("btn").addEventListener("click",()=>{
+        alert("Called")
+    })
    </script>
 </body>
 </html>

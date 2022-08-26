@@ -20,7 +20,7 @@
 // //     document.getElementById("mydiv").innerHTML = "<p>This is a p tag</p>"
 // // }
 
-// // //literas
+// // //literals
 // // let s = "hello"
 // // console.log(s);
 // // let i = 124

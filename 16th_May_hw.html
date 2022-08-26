@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="js/5th_May_HW.js"></script>
+    <span id="dice" style="border: 1px ; border-color: blue; height: 50%; width: 50%;" onclick="diceGame()" ></span>
 </body>
+
+<script>
+let dice = document.getElementById("dice")
+dice.setAttribute("value",Math.floor(Math.random()*10) +1)
+</script>
 </html>
