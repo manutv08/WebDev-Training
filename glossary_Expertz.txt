@@ -195,6 +195,79 @@
    unicode character
 
 16th may (afternoon)
+    npm init [1:26:00]
+    node modules[1:38:00]
+    /home/manu/Node2022/myNodeApp/app.js
+    npm --help [1:43:30]
+
+17th may
+    /home/manu/Node2022/myNodeApp/readwrite.js
+        fs
+        npm i underscore
+
+        event loop [50:00]
+    /home/manu/Node2022/myNodeApp/readWriteAsync.js
+
+    npm ls -g
+    npm uninstall underscore
+    npm update underscore
+    npm search underscore
+
+    /home/manu/Node2022/myNodeApp/lib/sum.js
+        npm init to make a folder "module"
+        let sum=require("./lib/sum")
+    /home/manu/Node2022/myNodeApp/calculations.js
+
+18th may
+    /home/manu/Node2022/myNodeApp/index.html
+        require does not work in browser
+    /home/manu/Node2022/myNodeApp/package.json
+          "main": "index.js",
+            /home/manu/Node2022/myNodeApp/app/index.js
+    /home/manu/Node2022/myNodeApp/app/configuration.js
+    /home/manu/Node2022/myNodeApp/test.js
+    https://www.freecodecamp.org/news/node-js-what-when-where-why-how-ab8424886e2/
+    https://www.geeksforgeeks.org/node-js-event-loop/
+
+    /home/manu/Node2022/printJokes/  [1:15:00]  
+    slide 77 (print jokes)
+        /home/manu/Node2022/printJokes/index.js
+
+    slide 83 (jokes list)
+    /home/manu/Node2022/printJokes/jokes/jokes.txt
+    /home/manu/Node2022/printJokes/jokes/index.js
+    /home/manu/Node2022/printJokes/math/index.js
+
+20th may
+    /home/manu/Node2022/myNodeApp/data.js
+        JSON.stringify(person);
+    https://nodejs.org/api/modules.html#the-module-wrapper
+        __dirname 
+        [1:02:00]
+        /home/manu/Node2022/myNodeApp/first.js
+        /home/manu/Node2022/myNodeApp/second.js
+        /home/manu/Node2022/myNodeApp/third.js
+        /home/manu/Node2022/myNodeApp/index.html
+
+        /home/manu/Node2022/myNodeApp/data.js
+        console.log(__dirname);
+
+        /home/manu/Node2022/myNodeApp/testValidator.js
+        npm i validator
+
+        http module {very imp.}
+            https://nodejs.org/api/http.html
+            https://developer.mozilla.org/en-US/docs/Web/HTTP
+            /home/manu/Node2022/myNodeApp/myserver.js
+                socket packet port....
+                sudo npm i -g nodemon
+                https://www.npmjs.com/package/pug
+                    template engine
+
+
+
+
+
 
 
 
