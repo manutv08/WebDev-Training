@@ -266,6 +266,224 @@
 
 
 
+AJESH SIR STARTED
+
+25th may
+    /home/manu/Node2022/nodemarch/app.js (line-28)
+    Intro,
+    module(exports,require),
+    blocking/non-blocking, 
+    sync/async,
+    npm 
+26th may
+    underscore,
+    self-invoking func, \
+    how to export module?,
+    require to import
+    /home/manu/Node2022/nodemarch/block.js
+    /home/manu/Node2022/nodemarch/app.js
+        underscore
+        https://stackoverflow.com/questions/67131200/is-there-any-difference-between-underscore-map-and-the-js-built-in-function
+
+        self invoking function
+        func returning a func
+
+    /home/manu/Node2022/nodemarch/lib/index.js
+    /home/manu/Node2022/nodemarch/notes.js
+        How to export module
+    /home/manu/Node2022/nodemarch/notes1.ts
+        require to import
+
+    /home/manu/Node2022/nodemarch/lib/math/index.js
+    /home/manu/Node2022/nodemarch/mathrandom.js
+        print jokes (partial impl)
+
+    /home/manu/Node2022/nodemarch/bom.js
+    /home/manu/Node2022/nodemarch/bom.html
+        js problem with local and global scope (12 or 15) [1:40:00]
+        function wrapping
+        slide 77
+            /mnt/c/Users/Manu/Documents/rough Node/addtwo.js
+
+30th may
+   print jokes 
+   json files [54:40]
+        /home/manu/Node2022/nodemarch/jsonfile.json
+        /home/manu/Node2022/nodemarch/jsonfile.js
+            stringify
+            parse
+        /home/manu/Node2022/nodemarch/fruit.js {JSON challenge}
+            fruits 'apple' to 'mango'
+    os module [1:37:46]
+        /home/manu/Node2022/nodemarch/osdemo.js
+
+31st may
+    create server
+        /home/manu/Node2022/nodemarch/server.js
+            line 66 alteration needed line 14
+        event-driven method line 60
+        req.url,req.method,req.headers line 48
+        set headers line 49
+        routing line 18
+        streaming data [1:23:04]
+        req.on('data',(chunk)=>{}) line 32
+
+1st June
+    custom Event emitters
+        /home/manu/Node2022/nodemarch/eventemitter.js
+        slide 127
+    multiple events
+        /home/manu/Node2022/nodemarch/eventemitter2.js
+             'on' or 'addListener' both interchangable
+             listenerCount
+             removeListener
+        slide 136
+        /home/manu/Node2022/nodemarch/eventemitter3.js
+            eventEmitter.once            
+            passing arguments to event emitter handlers
+        Use case on server
+        /home/manu/Node2022/nodemarch/server.js
+    setTimeout setInterval clearTimeout
+    /home/manu/Node2022/nodemarch/handlers.js
+    Event emitter inheritence
+        /home/manu/Node2022/nodemarch/eventemitter4.js
+            util.inherits
+
+    buffers            
+        /home/manu/Node2022/nodemarch/buffer.js
+
+2nd June
+   buffer continues..... 
+        /home/manu/Node2022/nodemarch/buffer.js
+    stream
+        /home/manu/Node2022/nodemarch/streams.js
+        Reading data in chunks
+            fs.createReadStream
+            rstream.on('data',(chunk)=>{})
+
+            fs.createWriteStream(
+            rstream.pipe(wstream)
+    serve html files using streams
+        /home/manu/Node2022/nodemarch/server.html
+        /home/manu/Node2022/nodemarch/streamhtml.js
+            fs.createReadStream(__dirname + '/server.html','utf8')
+    slide 168
+    /home/manu/Node2022/nodemarch/HW_chainingTheStream.js [H.W] slide 176,177
+
+3rd June
+   File systems 
+    slide 185
+    read & write
+    /home/manu/Node2022/nodemarch/filesystem/fileopen.js  
+    /home/manu/Node2022/nodemarch/filesystem/readfile.js
+    /home/manu/Node2022/nodemarch/filesystem/deletefile.js
+    /home/manu/Node2022/nodemarch/filesystem/filefolder.js
+    truncate
+    /home/manu/Node2022/nodemarch/filesystem/truncatefile.js
+    /home/manu/Node2022/nodemarch/filesystem/fswatch.js
+    /home/manu/Node2022/nodemarch/filesystem/hot [H.W]
+
+6th June
+   Express 
+    /home/manu/Node2022/nodemarch/nodeexpress
+    npm init --y
+    REST architecture slide 300
+    npm i express body-parser
+
+    /home/manu/Node2022/nodemarch/nodeexpress/app.js
+        const app = express()
+        app.use((req,res, next) =>{})
+        request funneling through the middlewares
+            /mnt/c/Users/Manu/Documents/rough Node/expressFunnel.js
+        app.listen
+
+        https://github.com/expressjs/express/blob/master/lib/response.js
+        
+        Routing
+           app.use('/products',(req,res,next)=>{ 
+        modularization (in future)
+        
+        body-parser
+
+8th June
+/home/manu/Node2022/nodemarch/nodeexpress/routes/admin.js
+/home/manu/Node2022/nodemarch/nodeexpress/routes/shop.js
+    const router = express.Router()
+    const shopRoutes = require('./routes/shop')
+    app.use(adminRoutes)
+    router.use('add-product', (req,res)=>{})
+    res.redirect('/')
+    module.exports = router
+
+    router.get router.post
+    res.status(404).send("<h1>404 error</h1>")
+    filtering of path
+        app.use('/admin',adminRoutes)
+
+
+Model-View-Control
+/home/manu/Node2022/nodemarch/nodeexpress/views/add-product.html
+/home/manu/Node2022/nodemarch/nodeexpress/views/shop.html
+
+const path = require('path')
+res.sendFile(path.join(__dirname, '../', 'views','add-product.html'))
+
+utility for root folder
+/home/manu/Node2022/nodemarch/nodeexpress/utils/path.js
+    path.dirname(require.main.filename)
+/home/manu/Node2022/nodemarch/nodeexpress/app.js
+    const rootDir = require('./utils/path')
+
+/home/manu/Node2022/nodemarch/nodeexpress/views/404.html
+
+page styling
+
+
+9th June
+/home/manu/Node2022/nodemarch/nodeexpress/public/css/style.css
+making a static folder
+    app.use(express.static(path.join(__dirname,'public')))
+
+Storing the data(array)
+    storing req.body.product into an array
+    exporting array along with routes
+
+Dynamic data - template Engines[EJS, PUG...]
+    npm i ejs
+    app.set('view engine', 'ejs')
+    app.set('views','views') ---> alias name, folder name
+    /home/manu/Node2022/nodemarch/nodeexpress/views/add-product.ejs
+    res.render('add-product')
+        res.render('add-product',{pageTitle: 'Add product'})
+            <title><%= pageTitle %></title>
+    /home/manu/Node2022/nodemarch/nodeexpress/routes/shop.js
+        const products = adminRoutes.products
+        res.render('shop', {products:products, pageTitle:"shop"})
+    /home/manu/Node2022/nodemarch/nodeexpress/views/shop.ejs
+        <% if(productsList.length> 0) { %>
+        <% for(let product of productsList) {%>
+
+10th June
+Styling done (not in the recording)
+
+includes or partials
+    /home/manu/Node2022/nodemarch/nodeexpress/views/includes/head.ejs
+    /home/manu/Node2022/nodemarch/nodeexpress/views/includes/end.ejs
+    /home/manu/Node2022/nodemarch/nodeexpress/views/includes/navigation.ejs
+    <%- include('includes/head.ejs')%>
+
+control
+    routes --> controllers
+/home/manu/Node2022/nodemarch/nodeexpress/controllers/product.js
+   exports.getAddProducts = (req, res) => { 
+
+
+
+
+
+
+
+
 
 
 
