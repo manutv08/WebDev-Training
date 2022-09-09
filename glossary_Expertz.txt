@@ -437,6 +437,7 @@ utility for root folder
 /home/manu/Node2022/nodemarch/nodeexpress/views/404.html
 
 page styling
+        *$*https://www.digitalocean.com/community/tutorials/css-rem-vs-em-units
 
 
 9th June
@@ -476,6 +477,126 @@ control
     routes --> controllers
 /home/manu/Node2022/nodemarch/nodeexpress/controllers/product.js
    exports.getAddProducts = (req, res) => { 
+/mnt/c/Users/Manu/Documents/rough Node/shoping/controllers/error.js
+
+models
+    Product
+        productName
+        save()
+        fetchAll()
+
+
+13th June
+
+
+    Product
+        productName
+        imgUrl
+        price
+        description
+        save(){products.push(this)
+        static    fetchAll()
+
+    Mongo Db [47:00]
+    creating cluster in mongo Atlas
+    install mongodb
+        npm i mongodb     (connection drivers)
+        /home/manu/Node2022/nodemarch/nodeexpress/models/database.js
+        const MongoClient = mongodb.MongoClient
+
+        Atlas ---> database --> connect --> connect your application --> connection string
+        MongoClient.connect("mongodb+srv://<username>:<password>@cluster0.h7gwpdc.mongodb.net/?retryWrites=true&w=majority")
+        MongoClient.connect("mongodb+srv://manu:CoolPassword@cluster0.h7gwpdc.mongodb.net/?retryWrites=true&w=majority")
+        MongoClient.connect("mongodb+srv://manu:CoolPassword@cluster0.h7gwpdc.mongodb.net/cart?retryWrites=true&w=majority")
+
+14th June
+/mnt/c/Users/Manu/Documents/rough Node/shoping/models/database.js
+       _db = client.db()
+/mnt/c/Users/Manu/Documents/rough Node/shoping/models/product.js
+        return db.collection('products')
+        .insertOne(this)
+
+[1:08:30]
+https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/
+https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database
+
+
+/mnt/c/Users/Manu/Documents/rough Node/shoping/controllers/product.js
+    Product.fetchAll()
+    .then(products=>{
+        res.render('shop',{pageTitle:"Shop", products:products})
+    })
+    .catch(err=>{console.log(err)})
+
+15th June
+Editing a product
+
+20th June
+[1:22:07] final answer
+deletion explained at end of the video
+
+21st June
+
+npm i mongoose
+/home/manu/Node2022/nodemarch/nodeexpress/app.js
+        const mongoose = require('mongoose')
+
+        mongoose.connect("mongodb+srv://manu:Hat^123@cluster0.h7gwpdc.mongodb.net/cart?retryWrites=true&w=majority")
+        .then(()=>{ app.listen(3000,()=>{console.log('server is running on port 3000')}) })
+
+/home/manu/Node2022/nodemarch/nodeexpress/models/product.js
+        const mongoose = require('mongoose')
+
+        const Schema = mongoose.Schema
+
+        const productSchema = new Schema({
+            productName : String,
+            imgUrl : String,
+            price: Number,
+            description: String,
+        })
+
+        module.exports = mongoose.model('Product', productSchema)
+https://mongoosejs.com/docs/guide.html
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#mongoose_primer
+
+/home/manu/Node2022/nodemarch/nodeexpress/controllers/product.js
+    product.save() --> product.save()
+    Product.fetchAll() --> Product.find()
+    https://mongoosejs.com/docs/api/model.html
+            Product.findByIdAndUpdate
+               Product.deleteById(prodId) --> Product.findByIdAndRemove(prodId)/ Product.findByIdAndDelete(prodId)
+
+22nd June
+
+https://www.npmjs.com/package/async
+/home/manu/Node2022/nodemarch/async/parallel.js
+npm i async
+
+    slide 256
+        /home/manu/Node2022/nodemarch/async/waterfall.js
+
+
+Web scrapping [25:00]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
